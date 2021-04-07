@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7652c3ff-80b5-4d8b-948f-04947d46b314" name="Default Changelist" comment="" />
+    <list default="true" id="7652c3ff-80b5-4d8b-948f-04947d46b314" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilize.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1qpTeEdeFr9D4wygCmrC3mpUykO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -149,26 +159,26 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="584" y="300" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1617776461059" />
-    <state width="1771" height="268" key="GridCell.Tab.0.bottom" timestamp="1617784075928">
+    <state width="1771" height="268" key="GridCell.Tab.0.bottom" timestamp="1617784687534">
       <screen x="0" y="25" width="1792" height="997" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1617776468452" />
-    <state width="1771" height="268" key="GridCell.Tab.0.bottom/0.25.1792.997@0.25.1792.997" timestamp="1617784075928" />
-    <state width="1771" height="268" key="GridCell.Tab.0.center" timestamp="1617784075927">
+    <state width="1771" height="268" key="GridCell.Tab.0.bottom/0.25.1792.997@0.25.1792.997" timestamp="1617784687534" />
+    <state width="1771" height="268" key="GridCell.Tab.0.center" timestamp="1617784687533">
       <screen x="0" y="25" width="1792" height="997" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1617776468451" />
-    <state width="1771" height="268" key="GridCell.Tab.0.center/0.25.1792.997@0.25.1792.997" timestamp="1617784075927" />
-    <state width="1771" height="268" key="GridCell.Tab.0.left" timestamp="1617784075927">
+    <state width="1771" height="268" key="GridCell.Tab.0.center/0.25.1792.997@0.25.1792.997" timestamp="1617784687533" />
+    <state width="1771" height="268" key="GridCell.Tab.0.left" timestamp="1617784687532">
       <screen x="0" y="25" width="1792" height="997" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1617776468450" />
-    <state width="1771" height="268" key="GridCell.Tab.0.left/0.25.1792.997@0.25.1792.997" timestamp="1617784075927" />
-    <state width="1771" height="268" key="GridCell.Tab.0.right" timestamp="1617784075927">
+    <state width="1771" height="268" key="GridCell.Tab.0.left/0.25.1792.997@0.25.1792.997" timestamp="1617784687532" />
+    <state width="1771" height="268" key="GridCell.Tab.0.right" timestamp="1617784687534">
       <screen x="0" y="25" width="1792" height="997" />
     </state>
     <state width="1771" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1617776468451" />
-    <state width="1771" height="268" key="GridCell.Tab.0.right/0.25.1792.997@0.25.1792.997" timestamp="1617784075927" />
+    <state width="1771" height="268" key="GridCell.Tab.0.right/0.25.1792.997@0.25.1792.997" timestamp="1617784687534" />
     <state x="405" y="196" key="SettingsEditor" timestamp="1617776443118">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
