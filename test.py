@@ -21,9 +21,16 @@ IMAGE_TEST_DIRECTORY = './data/test_set'
 
 
 if __name__ == "__main__":
+    # still, load data
     test_data = load_data('./data/test_set')
+
+    # Modify the data, just like train.py
     test_images = np.array([i[0] for i in test_data]).reshape(-1, IMAGE_SIZE, IMAGE_SIZE, 1)
     test_labels = np.array([i[1] for i in test_data])
+
+    # load the model
     model = load_model("model2.h5")
+
+    # use the model and test data to evaluate accuracy
     loss, acc = model.evaluate(test_images, test_labels, verbose=1)
     print("accuracy: {0}".format(acc * 100))
