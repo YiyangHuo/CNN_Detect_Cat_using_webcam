@@ -45,15 +45,15 @@ if __name__ == "__main__":
         pil_im = Image.fromarray(frame)
         pil_im = pil_im.convert('L')
         pil_im = pil_im.resize((IMAGE_SIZE, IMAGE_SIZE), Image.ANTIALIAS)
-        sample_to_predict = np.array([pil_im]).reshape(-1, IMAGE_SIZE, IMAGE_SIZE, 1)
-        predictions = model.predict(sample_to_predict)
+        sample_to_predict = np.array(pil_im).reshape(-1, IMAGE_SIZE, IMAGE_SIZE, 1)
+        predictions = model.predict(np.array(sample_to_predict))
         # [1,0] means that it is cat
-        if predictions[0][0] >0.9 and predictions[0][1] < 0.1:
+        if predictions[0][0] >0.9 and predictions[0][0] < 1.1 and predictions[0][1] < 0.1 and predictions[0][1] > -0.1:
 
             frame = cv2.putText(frame, 'There is a cat', (w//16, h//2), font,
                                 fontScale, color, thickness, cv2.LINE_AA)
         cv2.imshow('frame', frame)
-
+        print(predictions)
         # the 'q' button is set as the
         # quitting button you may use any
         # desired button of your choice

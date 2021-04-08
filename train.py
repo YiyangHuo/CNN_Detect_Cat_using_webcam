@@ -27,13 +27,13 @@ def label_img(name):
 
 def load_data(directory):
     print("Loading images...")
-    train_data = []
+    data = []
     directories = next(os.walk(directory))[1]
 
     for dirname in directories:
         print("Loading {0}".format(dirname))
         file_names = next(os.walk(os.path.join(directory, dirname)))[2]
-        for i in range(500):
+        for i in range(600):
             image_name = choice(file_names)
             image_path = os.path.join(directory, dirname, image_name)
             label = label_img(dirname)
@@ -42,8 +42,29 @@ def load_data(directory):
                 img = img.convert('L')
                 img = img.resize((IMAGE_SIZE, IMAGE_SIZE), Image.ANTIALIAS)
                 arrayimg = np.array(img)
-                train_data.append([arrayimg, label])
+                data.append([arrayimg, label])
 
+    return data
+
+
+def load_training_data():
+    train_data = []
+    directories = next(os.walk(IMAGE_TRAIN_DIRECTORY))[1]
+    print("Loading images...")
+    for dirname in directories:
+        print("Loading {0}".format(dirname))
+        image_dir_path = os.path.join(IMAGE_TRAIN_DIRECTORY, dirname)
+        for img in os.listdir(image_dir_path):
+
+            label = label_img(dirname)
+            path = os.path.join(image_dir_path, img)
+            if "DS_Store" not in path:
+                img = Image.open(path)
+                img = img.convert('L')
+                img = img.resize((IMAGE_SIZE, IMAGE_SIZE), Image.ANTIALIAS)
+                train_data.append([np.array(img), label])
+
+    shuffle(train_data)
     return train_data
 
 def training_model():
@@ -72,12 +93,11 @@ def training_model():
 
     return model
 
-    return model
 
 
 
 if __name__ == "__main__":
-    training_data = load_data(IMAGE_TRAIN_DIRECTORY)
+    training_data = load_training_data()
     model = training_model()
     training_images = np.array([i[0] for i in training_data]).reshape(-1, IMAGE_SIZE, IMAGE_SIZE, 1)
     training_labels = np.array([i[1] for i in training_data])
