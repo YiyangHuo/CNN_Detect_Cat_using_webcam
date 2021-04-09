@@ -32,7 +32,7 @@ if __name__ == "__main__":
     vid = cv2.VideoCapture(0)
 
     # load the model
-    model = load_model("model2.h5")
+    model = load_model("model.h5")
 
 
     # a forever loop until quit signal issued, present the image frame by frame

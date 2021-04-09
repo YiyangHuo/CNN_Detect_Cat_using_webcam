@@ -29,7 +29,7 @@ if __name__ == "__main__":
     test_labels = np.array([i[1] for i in test_data])
 
     # load the model
-    model = load_model("model2.h5")
+    model = load_model("model.h5")
 
     # use the model and test data to evaluate accuracy
     loss, acc = model.evaluate(test_images, test_labels, verbose=1)

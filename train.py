@@ -125,4 +125,4 @@ if __name__ == "__main__":
     model.fit(training_images, training_labels, batch_size=50, epochs=10, verbose=1)
 
     # Save trained model
-    model.save("model2.h5")
+    model.save("model.h5")
